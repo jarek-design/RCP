@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <nocStart>22</nocStart>
+  <nocEnd>6</nocEnd>
+  <toler>5</toler>
+  <normaDzienna>8</normaDzienna>
+  <normaNocna>8</normaNocna>
+  <przerwaWpracy>3</przerwaWpracy>
+  <rejestratorW>false</rejestratorW>
+  <rejestratorZewn>true</rejestratorZewn>
+  <rejAdres>D:\Projects\project7\rcpracy\studio8\gratCon\rejestrator\bin\Debug</rejAdres>
+  <ignorujNormyGratyf>false</ignorujNormyGratyf>
+</ConfData>

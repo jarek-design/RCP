@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="300c91fb-5fcd-4cd9-aea4-a89d5f510de9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://astra.aspnet.pl/prog/register.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="register.xsd" MetadataType="Schema" ID="6c4e5f24-a784-44ed-86b1-0af1bd01f853" SourceId="1" SourceUrl="http://astra.aspnet.pl/prog/register.svc?xsd=xsd1" />
+    <MetadataFile FileName="register1.xsd" MetadataType="Schema" ID="b0ae6167-27b3-4f35-ae39-ae89dad66f3b" SourceId="1" SourceUrl="http://astra.aspnet.pl/prog/register.svc?xsd=xsd0" />
+    <MetadataFile FileName="register2.xsd" MetadataType="Schema" ID="a02c4554-b37a-49e5-a6e5-abec08d60170" SourceId="1" SourceUrl="http://astra.aspnet.pl/prog/register.svc?xsd=xsd2" />
+    <MetadataFile FileName="register.disco" MetadataType="Disco" ID="b8f694b8-ad9b-426b-b3a7-ade5b85dbd8e" SourceId="1" SourceUrl="http://astra.aspnet.pl/prog/register.svc?disco" />
+    <MetadataFile FileName="Register.wsdl" MetadataType="Wsdl" ID="07aed9c2-dadd-441d-92c7-6b58a5d8e2cb" SourceId="1" SourceUrl="http://astra.aspnet.pl/prog/register.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

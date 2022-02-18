@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32560262-B32D-4945-AD0E-325A7A8C94FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rcpracy</RootNamespace>
+    <AssemblyName>rcpracy</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>zegarMini2.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F1Grupy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1Grupy.Designer.cs">
+      <DependentUpon>F1Grupy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RcpDataSet.cs">
+      <DependentUpon>RcpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RcpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RcpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SaveBeforeClosing.cs" />
+    <Compile Include="ucDGVsum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDGVsum.Designer.cs">
+      <DependentUpon>ucDGVsum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importTxt2Rejestr.cs" />
+    <Compile Include="export2Grat.cs" />
+    <Compile Include="F1rozliczenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1rozliczenia.Designer.cs">
+      <DependentUpon>F1rozliczenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listaPrac.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="params.cs" />
+    <Compile Include="rozliczenie.cs" />
+    <Compile Include="F1menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1menu.Designer.cs">
+      <DependentUpon>F1menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fpracow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fpracow.Designer.cs">
+      <DependentUpon>Fpracow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funct.cs" />
+    <Compile Include="ImportPrac.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F1Grupy.resx">
+      <DependentUpon>F1Grupy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDGVsum.resx">
+      <DependentUpon>ucDGVsum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1menu.resx">
+      <DependentUpon>F1menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1rozliczenia.resx">
+      <DependentUpon>F1rozliczenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpracow.resx">
+      <DependentUpon>Fpracow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rejestr.resx">
+      <DependentUpon>rejestr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rejestrator.resx">
+      <DependentUpon>rejestrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rozliczTmp.resx">
+      <DependentUpon>rozliczTmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucOkres.resx">
+      <DependentUpon>ucOkres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ustawienia.resx">
+      <DependentUpon>ustawienia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wejscia.resx">
+      <DependentUpon>Wejscia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wejscia2.resx">
+      <DependentUpon>wejscia2.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rejestr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rejestr.Designer.cs">
+      <DependentUpon>rejestr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rejestrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rejestrator.Designer.cs">
+      <DependentUpon>rejestrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rozliczTmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rozliczTmp.Designer.cs">
+      <DependentUpon>rozliczTmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucOkres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucOkres.designer.cs">
+      <DependentUpon>ucOkres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ustawienia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ustawienia.designer.cs">
+      <DependentUpon>ustawienia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wejscia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wejscia.designer.cs">
+      <DependentUpon>Wejscia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wejscia2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wejscia2.Designer.cs">
+      <DependentUpon>wejscia2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="Crypto.txt" />
+    <None Include="RcpDataSet.xsc">
+      <DependentUpon>RcpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RcpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RcpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RcpDataSet.xss">
+      <DependentUpon>RcpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\info.jpg" />
+    <None Include="Resources\grat.jpg" />
+    <None Include="Resources\rozlicz.jpg" />
+    <None Include="Resources\refresh.jpg" />
+    <None Include="Resources\eye.jpg" />
+    <None Include="Resources\eye1.jpg" />
+    <None Include="Resources\importNazwisk.jpg" />
+    <None Include="Resources\exp2excel.jpg" />
+    <None Include="Resources\print.jpg" />
+    <None Include="Resources\Import RCP.jpg" />
+    <Content Include="RCP.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RCP_log.ldf">
+      <DependentUpon>RCP.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\import.jpg" />
+    <Content Include="Resources\loaderT.gif" />
+    <Content Include="zegarMini2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Functions\Functions.csproj">
+      <Project>{e2b8d9c6-add9-418b-b06c-bac2cd11f254}</Project>
+      <Name>Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\reports\reports.csproj">
+      <Project>{0293c7a9-369e-4835-97b0-df237ed6987b}</Project>
+      <Name>reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

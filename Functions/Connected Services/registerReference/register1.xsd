@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://astra.aspnet.pl/prog/register.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/progRegister" />
+  <xs:element name="SetFirma">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="f1" nillable="true" type="q1:FirmaD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetFirmaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetFirmaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirma">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirmaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="GetFirmaResult" nillable="true" type="q2:FirmaD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirmaById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idfi" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirmaByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="GetFirmaByIdResult" nillable="true" type="q3:FirmaD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="ord1" nillable="true" type="q4:Order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="SetOrderResult" nillable="true" type="q5:OrderVerifi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="progId" type="xs:short" />
+        <xs:element minOccurs="0" name="licenceNr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="GetOrderResult" nillable="true" type="q6:OrderVerifi" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="P_register">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="P_registerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/progRegister" minOccurs="0" name="P_registerResult" nillable="true" type="q7:SendStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEncNip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEncNipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEncNipResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrId" type="xs:int" />
+        <xs:element minOccurs="0" name="encNip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterStatusResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterStat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegistrId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterStatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterStatResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
